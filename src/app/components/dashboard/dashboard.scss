@@ -13,17 +13,74 @@
     margin: 0;
     border-right: 1px solid #2e4470;
 }
+.navbar .navbar-brand{
+    font-size: 20px;
+}
 .navbar .attachFile{
     margin: 0;
     height: 40px;
     width: 40px;
     background: #fff;
     border-radius: 50%;
-    padding: 10px;
+    padding: 6px;
     text-align: center;
     margin-right: 8px;
 }
 .navbar .attachFile .attachIcon{
     transform: rotate(100deg);
     color: #777;
+}
+
+.navbar .dropdown:hover>.dropdown-menu {
+    display: block;
+  }
+  .navbar .dropDownButton{
+    background: transparent;
+    border: none;
+    font-size: 25px;
+    display: flex;
+  }
+
+ .navbar .circle{
+    height: 45px;
+    width: 45px;
+    background: #9bb1e3;
+    color: #2e4a7e;
+    border-radius: 50%;
+    border: 2px solid #4dd6be;
+    font-size: 17px;
+    cursor: pointer;
+    display: flex;
+}
+.navbar .dropdown-menu{
+    // display: block;
+    margin-left: 50px;
+    background: #2e4a7e;
+    border: 2px solid #5a8dfa;
+}
+.navbar .dropdown-menu::before{
+    content: "";
+    position: absolute;
+    right: 50%;
+    top: -15px;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 15px solid #42a7f5;
+}
+.navbar .dropdown-menu .empty{
+    position: absolute;
+    top: -13px;
+    width: 0;
+    border-bottom: solid 13px #2e4a7e;
+    border-right: solid 14px transparent;
+    border-left: solid 14px transparent;
+    right: 52%;
+}
+
+
+.navbar .dropdown-item{
+    color:#fff;
+    background: #2e4a7e;
 }
