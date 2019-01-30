@@ -1,0 +1,29 @@
+// .alert-primary {
+//     color: #fff;
+//     background-color: #cce5ff;
+//     border-color: #b8daff;
+// }
+.navbar .bg-dark {
+    background-color: #57626f !important;
+}
+.navbar .row{
+    width: 100%;
+}
+.navbar .form-group{
+    margin: 0;
+    border-right: 1px solid #2e4470;
+}
+.navbar .attachFile{
+    margin: 0;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    margin-right: 8px;
+}
+.navbar .attachFile .attachIcon{
+    transform: rotate(100deg);
+    color: #777;
+}
