@@ -84,3 +84,33 @@
     color:#fff;
     background: #2e4a7e;
 }
+
+.navbar .input-header-container{
+    background: #57626f;
+    margin-top: 10px;
+}
+
+.navbar .input-header-container .search-icon{
+    height: 35px;
+    width: 35px;
+    font-size: 22px;
+    background: #57626f;
+    padding-left: 5px;
+    color: #fff;
+    padding-top: 9px;
+}
+
+.navbar .input-header-container .form-control{
+    border: none;
+    height: 40px;
+    background: #57626f;
+    color: #fff;
+    font-size: 20px;
+    width: 160px;
+}
+.navbar .input-header-container .form-control:focus{
+    box-shadow:none;
+}
+.navbar .input-header-container .form-control::placeholder{
+    color:#fff;
+}
