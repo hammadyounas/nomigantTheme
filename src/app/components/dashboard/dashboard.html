@@ -21,8 +21,8 @@
     This is a primary alert—check it out!
   </div> -->
 <nav style="background-color:#57626f !important; padding: 15px" class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
-  <div class="row">
-    <div style="text-align: right;padding-right: 0;" class="col-lg-1">
+  <div class="row" style="height:50px;">
+    <div style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;" class="col-lg-1">
       <form style="margin:0;" class="navbar-brand">
         <div class="form-group">
           <label class="attachFile" for="exampleFormControlFile1"><i class="fa fa-paperclip fa-lg attachIcon"></i>
@@ -31,14 +31,15 @@
         </div>
       </form>
     </div>
-    <div class="col-lg-2" style="border-right:1px solid #000">
+    <div class="col-lg-2" style="border-right:1px solid #274170">
       <div class="dropdown">
-        <button class="btn btn-secondary dropDownButton" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <button class="btn btn-secondary dropDownButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           <!-- <div></div> -->
           <div class="circle">
             <p style="margin:0;padding:9px;">HP</p>
           </div>
-          <span style="margin:10px 0 0 10px">Dropdown button</span>
+          <span style="margin:10px 0 0 5px">Dropdown button</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <div class="empty"></div>
@@ -48,12 +49,19 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-8" style="border-right:1px solid">
-        <div class="input-group input-header-container">
+    <div class="col-lg-8" style="border-right:1px solid #274170">
+      <div class="row" >
+        <div class="col-lg-3" >
+          <div class="input-group input-header-container ">
             <i class="fa fa-search icon search-icon"></i>
             <input class="form-control" type="text" placeholder="Search" name="usrnm">
-            
+            <!-- <img src="./../../../assets/img/chat.png"/> -->
           </div>
+        </div>
+        <div class="col-lg-1">
+          <img src="./../../../assets/img/chat.png" style="margin-top:9px;" />
+        </div>
+      </div>
     </div>
     <div class="col-lg-1">
 
@@ -61,41 +69,16 @@
     </div>
   </div>
 </nav>
-
-<!-- <nav style="background-color:#57626f !important; padding: 15px" class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+<!-- <div class="body-container">
+  <div class="row">
+    <div class="col-lg-6">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>        
+    </div>
+    <div class="col-lg-6">
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+      </div>
   </div>
-</nav> -->
+
+</div> -->
