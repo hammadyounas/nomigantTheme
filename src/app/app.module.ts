@@ -1,16 +1,16 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-//ROUTING 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+//ROUTING
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
 
 //containers
-import {Containers,DashboardContainer} from './container/index'
+import { Containers, DashboardContainer } from "./container/index";
 
 //Components
-import {Components,Dashboard} from './components/index';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { Components, Dashboard } from "./components/index";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -20,12 +20,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     Components,
     Dashboard
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
