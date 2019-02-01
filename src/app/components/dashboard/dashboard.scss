@@ -84,6 +84,21 @@
     right: 52%;
 }
 
+.menu-button{
+    background: transparent;
+    border: none;
+    font-size: 24px;
+    padding: 0;
+    padding-top: 8px;   
+    color: #fff;
+}
+.menu-button:focus{
+    box-shadow: none;
+}
+.menu-button-icon{
+    margin-left: 20px;
+    font-size: 30px;
+}
 
 .navbar .dropdown-item{
     color:#fff;
@@ -118,4 +133,133 @@
 }
 .navbar .input-header-container .form-control::placeholder{
     color:#fff;
+}
+.body{
+    height: calc(100vh - 80px);
+    width: 100%;
+}
+
+.header-app {
+    float: right;
+    height: 100%;
+    width: 15%;
+    background-color: #45494c;
+    color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+
+}
+
+.list-sidebar {
+    list-style: none;
+    text-align: right;
+    padding-top: 45%;
+    padding-right: 6%;
+}
+.btn-1{
+    background: #e95151;
+    border: #e95151;
+    font-size: 25px;
+    color: #fff;
+}
+.btn-2{
+    background: #d64c80;
+    border: #d64c80;
+    font-size: 25px;
+    color: #fff;
+}
+.btn-3{
+    background: #fa9e3a;
+    border: #fa9e3a;
+    font-size: 25px;
+    color: #fff;
+}
+.btn-4{
+    background: #a370df;
+    border: #a370df;
+    font-size: 25px;
+    color: #fff;
+}
+.span-1{
+    flex: 25;
+    text-align: left;
+    padding-left: 15px;
+}
+.span-2{
+    flex: 50;
+    text-align: left;
+}
+.para{
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+
+}
+.dropdown-button{
+    background: #eef5fa;
+    border-bottom: 2px solid #a7e2f5;
+    margin-bottom: 5px;
+    border-radius: 0;
+    padding: 8px 8px 8px 0px;
+    min-width: 130px;
+}
+.dropdown-toggle::after{
+    display: none;
+}
+.dropdown-toggle::before{
+    display: inline-block;
+    margin-left: -40px;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+
+// .collapsing {
+//     -webkit-transition-delay: 2s;
+//     transition-delay: 2s;
+//     visibility: hidden;
+// }
+// .collapse.show {
+//     -webkit-transition-delay: 3s;
+//     transition-delay: 3s;
+//     visibility: visible;
+// }
+
+li > a {
+    text-decoration: none;
+    color: white;
+    font-size: 21px;
+    &:hover {
+        color: cyan
+
+    }
+}
+
+
+.collapsed.active{ 
+    display:block;
+    color:#fff;
+    border-left:0px solid #dedede;
+    text-decoration:none
+}
+
+.sublist {
+    text-decoration: none;
+    list-style: none;
+    padding-top: 5px;
+    padding-right: 20px;
+    list-style: none;
+
+    &:hover {
+        color: cyan
+    }
+    
+}
+
+.submenu-icon {
+    position: relative;
+    right: 75%;
 }

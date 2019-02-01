@@ -21,41 +21,25 @@
     This is a primary alert—check it out!
   </div> -->
 
-<nav
-  style="background-color:#57626f !important; padding: 15px"
-  class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark"
->
+<nav style="background-color:#57626f !important; padding: 15px" class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="row" style="height:50px;">
-    <div
-      style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;"
-      class="col-lg-1"
-    >
+    <div style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;" class="col-lg-1">
       <form style="margin:0;" class="navbar-brand">
         <div class="form-group">
-          <label class="attachFile" for="exampleFormControlFile1"
-            ><i class="fa fa-paperclip fa-lg attachIcon"></i>
+          <label class="attachFile" for="exampleFormControlFile1"><i class="fa fa-paperclip fa-lg attachIcon"></i>
           </label>
-          <input
-            style="display:none"
-            type="file"
-            class="form-control-file"
-            id="exampleFormControlFile1"
-          />
+          <input style="display:none" type="file" class="form-control-file" id="exampleFormControlFile1" />
         </div>
       </form>
     </div>
     <div class="col-lg-2" style="border-right:1px solid #274170">
       <div class="dropdown">
-        <button
-          class="btn btn-secondary dropDownButton"
-          type="button"
-          id="dropdownMenuButton"
-          data-toggle="dropdown"
-          aria-haspopup="true"
-          aria-expanded="false"
-        >
+        <button class="btn btn-secondary dropDownButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
           <!-- <div></div> -->
-          <div class="circle"><p style="margin:0;padding:9px;">HP</p></div>
+          <div class="circle">
+            <p style="margin:0;padding:9px;">HP</p>
+          </div>
           <span style="margin:10px 0 0 5px">Dropdown button</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -71,12 +55,7 @@
         <div class="col-lg-3">
           <div class="input-group input-header-container ">
             <i class="fa fa-search icon search-icon"></i>
-            <input
-              class="form-control"
-              type="text"
-              placeholder="Search"
-              name="usrnm"
-            />
+            <input class="form-control" type="text" placeholder="Search" name="usrnm" />
             <!-- <img src="./../../../assets/img/chat.png"/> -->
           </div>
         </div>
@@ -85,20 +64,104 @@
         </div>
       </div>
     </div>
-    <div class="col-lg-1"><p>asdsa</p></div>
+    <div class="col-lg-1">
+      <button type="button" class="btn menu-button" data-toggle="button" (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed" aria-pressed="false" href="#navbarToggleExternalContent" data-target="navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent" autocomplete="off">
+        <Span>usrName</Span>
+        <i class="fa fa-bars menu-button-icon"></i></button>
+    </div>
+
   </div>
 </nav>
 
-<!-- <div class="body-container">
-  <div class="row">
-    <div class="col-lg-6">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>        
-    </div>
-    <div class="col-lg-6">
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
-        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+<div class="body">
+
+  <div class="header-app" *ngIf="isCollapsed">
+    <ul class="list-sidebar">
+      <li class="sidebar-brand"><a href="#"> Start Bootstrap </a></li>
+      <li><a href="#">Dashboard</a></li>
+      
+      <li><a href="#" style="color: cyan">----------------------------</a></li>
+      <li><a href="#" style="color: cyan">----------------------------</a></li>
+      <li> <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active"> <i class="fa fa-bar-chart-o"></i>
+          <span class="fa fa-chevron-left pull-right submenu-icon"></span>
+          <span class="nav-label">Graphs</span>
+        </a>
+        <ul class="sub-menu collapse sublist" id="products">
+          <li class="active"><a href="#">CSS3 Animation</a></li>
+          <li><a href="#">General</a></li>
+          <li><a href="#">Buttons</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Shortcuts</a></li>
+    </ul>
+  </div>
+  <div style="padding:30px;">
+    <div class="row">
+      <div class="col-lg-6" style="margin-top:76px;">
+        <button type="button" class="btn btn-lg btn-block btn-1">
+          <div style="display: flex;">
+            <span class="span-1">7</span>
+            <span class="span-2">kjhdkfakj</span>
+          </div>
+        </button>
+        <button type="button" class="btn btn-lg btn-block btn-2">
+          <div style="display: flex;">
+            <span class="span-1">27</span>
+            <span class="span-2">kjhdkfakj</span>
+          </div>
+        </button>
       </div>
+      <div class="col-lg-6">
+        <p style="margin-bottom:5px;">akjadjhs</p>
+        <div class="dropdown show">
+          <a class="btn dropdown-button dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            #eef6fb
+          </a>
+
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item">Action</a>
+            <a class="dropdown-item">Another action</a>
+            <a class="dropdown-item">Something else here</a>
+          </div>
+        </div>
+        <button type="button" class="btn btn-lg btn-block btn-3">
+          <div style="display: flex;">
+            <span class="span-1">5</span>
+            <span class="span-2">kjhdkfakj</span>
+          </div>
+        </button>
+        <button type="button" class="btn btn-lg btn-block btn-4">
+          <div style="display: flex;">
+            <span class="span-1">177</span>
+            <span class="span-2">kjhdkfakj</span>
+          </div>
+        </button>
+      </div>
+    </div>
+    <div style="margin-top:20px;" class="row">
+      <div class="col-md-6">
+        <p class="para">dskjhsjfh</p>
+      </div>
+      <div class="col-md-6 row">
+        <div class="col-md-6">
+          <p class="para">sdjhfdsj</p>
+        </div>
+        <div class="col-md-6">
+          <p style="text-align:right" class="para">hdkgyuas</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:20px;" class="row">
+      <div class="col-md-8" style="text-align:right">
+        <img src="./../../../assets/img/pic1.png" />
+      </div>
+      <div class="col-md-4" style="text-align:right">
+        <img src="./../../../assets/img/pic2.png" />
+      </div>
+    </div>
   </div>
 
-</div> -->
+</div>

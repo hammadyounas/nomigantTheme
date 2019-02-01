@@ -7,6 +7,8 @@ import {Component,OnInit} from '@angular/core'
     styleUrls: ['./dashboard.scss']
 })
 export class Dashboard implements OnInit{
+    isCollapsed = false;
+
      items = [{
         text: 'Item2',
         items: [{ text: 'Item2.1' }, { text: 'Item2.2' }, { text: 'Item2.3' }]

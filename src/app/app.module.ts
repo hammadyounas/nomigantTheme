@@ -1,5 +1,7 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
 
 //ROUTING
 import { AppRoutingModule } from "./app-routing.module";
@@ -20,7 +22,11 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     Components,
     Dashboard
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [BrowserModule, 
+    AppRoutingModule, 
+    BrowserAnimationsModule,
+    NgbModule.forRoot()
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
