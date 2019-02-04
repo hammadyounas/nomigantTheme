@@ -1,4 +1,4 @@
-import {Component,OnInit} from '@angular/core'
+import {Component,OnInit } from '@angular/core'
 // import {} from './../../../assets/img/chat.png'
 
 @Component({
@@ -8,7 +8,7 @@ import {Component,OnInit} from '@angular/core'
 })
 export class Dashboard implements OnInit{
     isCollapsed = false;
-
+    progressVal = 50;
      items = [{
         text: 'Item2',
         items: [{ text: 'Item2.1' }, { text: 'Item2.2' }, { text: 'Item2.3' }]
