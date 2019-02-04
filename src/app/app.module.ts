@@ -9,9 +9,10 @@ import { AppComponent } from "./app.component";
 import { Containers, DashboardContainer } from "./container/index";
 
 //Components
-import { Components, Dashboard } from "./components/index";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { Components, Dashboard,Progressbar } from "./components/index";
 
+//Styling
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { GridModule } from "@progress/kendo-angular-grid";
 
 @NgModule({
@@ -20,7 +21,8 @@ import { GridModule } from "@progress/kendo-angular-grid";
     Containers,
     DashboardContainer,
     Components,
-    Dashboard
+    Dashboard,
+    Progressbar
   ],
   imports: [
     BrowserModule,
