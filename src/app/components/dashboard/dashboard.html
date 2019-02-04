@@ -7,22 +7,17 @@
     aria-valuemax="100"
   ></div>
 </div>
-<nav
-  style="background-color:#57626f !important; padding: 15px"
-  class="navbar navbar-expand-lg navbar-dark bg-dark"
->
-  <div class="row" style="height:50px;">
+<nav  class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="row">
     <div
-      style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;"
-      class="col-md-1"
+      class="col-md-1 attachDiv"
     >
-      <form style="margin:0;" class="navbar-brand">
+      <form  class="navbar-brand">
         <div class="form-group">
           <label class="attachFile" for="exampleFormControlFile1"
             ><i class="fa fa-paperclip fa-lg attachIcon"></i>
           </label>
           <input
-            style="display:none"
             type="file"
             class="form-control-file"
             id="exampleFormControlFile1"
@@ -30,7 +25,7 @@
         </div>
       </form>
     </div>
-    <div class="col-md-2" style="border-right:1px solid #274170;padding: 0">
+    <div class="col-md-2 drop-down-div" >
       <div class="dropdown">
         <button
           class="btn btn-secondary dropDownButton"
@@ -42,9 +37,9 @@
         >
           <!-- <div></div> -->
           <div class="circle">
-            <p style="margin:0;padding:9px;">HP</p>
+            <p >HP</p>
           </div>
-          <span style="margin:10px 0 0 5px">Dropdown button</span>
+          <span>Dropdown button</span>
         </button>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
           <div class="empty"></div>
@@ -54,9 +49,9 @@
         </div>
       </div>
     </div>
-    <div class="col-md-8" style="border-right:1px solid #274170">
+    <div class="col-md-8 right-border" >
       <div class="row">
-        <div class="col-md-3" style="padding:0;padding-left:8px;">
+        <div class="col-md-3 search-div" >
           <div class="input-group input-header-container ">
             <i class="fa fa-search icon search-icon"></i>
             <input
@@ -69,11 +64,11 @@
           </div>
         </div>
         <div class="col-md-1">
-          <img src="./../../../assets/img/chat.png" style="margin-top:9px;" />
+          <img src="./../../../assets/img/chat.png" class="msg-image" />
         </div>
       </div>
     </div>
-    <div class="col-md-1" style="padding:0;text-align: right;">
+    <div class="col-md-1 right-sidebar-btn">
       <button
         type="button"
         class="btn menu-button"
@@ -96,14 +91,13 @@
 <div class="body">
   <div class="header-app" *ngIf="isCollapsed">
     <ul class="list-sidebar">
-      <li class="sidebar-brand"><a href="#"> Start Bootstrap </a></li>
-      <li><a href="#">Dashboard</a></li>
+      <li class="sidebar-brand"><a > Start Bootstrap </a></li>
+      <li><a >Dashboard</a></li>
 
-      <li><a href="#" style="color: cyan">------------------------</a></li>
-      <li><a href="#" style="color: cyan">------------------------</a></li>
+      <li><a class="line">------------------------</a></li>
+      <li><a class="line">------------------------</a></li>
       <li>
         <a
-          href="#"
           data-toggle="collapse"
           data-target="#products"
           class="collapsed active"
@@ -113,32 +107,32 @@
           <span class="nav-label">Graphs</span>
         </a>
         <ul class="sub-menu collapse sublist" id="products">
-          <li class="active"><a href="#">CSS3 Animation</a></li>
-          <li><a href="#">General</a></li>
-          <li><a href="#">Buttons</a></li>
+          <li class="active"><a >CSS3 Animation</a></li>
+          <li><a >General</a></li>
+          <li><a >Buttons</a></li>
         </ul>
       </li>
-      <li><a href="#">Shortcuts</a></li>
+      <li><a>Shortcuts</a></li>
     </ul>
   </div>
-  <div style="padding:30px;">
+  <div class="main-body">
     <div class="row">
-      <div class="col-lg-6" style="margin-top:76px;">
+      <div class="col-lg-6 left-col">
         <button type="button" class="btn btn-lg btn-block btn-1">
-          <div style="display: flex;">
+          <div class="inline-text-btn">
             <span class="span-1">7</span>
             <span class="span-2">kjhdkfakj</span>
           </div>
         </button>
         <button type="button" class="btn btn-lg btn-block btn-2">
-          <div style="display: flex;">
+          <div class="inline-text-btn">
             <span class="span-1">27</span>
             <span class="span-2">kjhdkfakj</span>
           </div>
         </button>
       </div>
-      <div class="col-lg-6">
-        <p style="margin-bottom:5px;">akjadjhs</p>
+      <div class="col-lg-6 right-col">
+        <p class="top-text">akjadjhs</p>
         <div class="dropdown show">
           <a
             class="btn dropdown-button dropdown-toggle"
@@ -158,36 +152,36 @@
           </div>
         </div>
         <button type="button" class="btn btn-lg btn-block btn-3">
-          <div style="display: flex;">
+          <div class="inline-text-btn">
             <span class="span-1">5</span>
             <span class="span-2">kjhdkfakj</span>
           </div>
         </button>
         <button type="button" class="btn btn-lg btn-block btn-4">
-          <div style="display: flex;">
+          <div class="inline-text-btn">
             <span class="span-1">177</span>
             <span class="span-2">kjhdkfakj</span>
           </div>
         </button>
       </div>
     </div>
-    <div style="margin-top:20px;" class="row">
-      <div class="col-md-4">
-        <p class="para">111111</p>
+    <div  class="row row-margin">
+      <div class="col-md-6">
+        <p >111111</p>
       </div>
-      <div class="col-md-4">
-        <p class="para">222222</p>
+      <div class="col-md-3">
+        <p >222222</p>
       </div>
 
-      <div class="col-md-4">
-        <p style="text-align:right" class="para">33333</p>
+      <div class="col-md-3 ">
+        <p class="right-align">33333</p>
       </div>
     </div>
-    <div style="margin-top:20px;" class="row">
-      <div class="col-md-8" style="text-align:right">
+    <div class="row row-margin">
+      <div class="col-md-8 right-align">
         <img src="./../../../assets/img/pic1.png" />
       </div>
-      <div class="col-md-4" style="text-align:right">
+      <div class="col-md-4 right-align">
         <img src="./../../../assets/img/pic2.png" />
       </div>
     </div>
