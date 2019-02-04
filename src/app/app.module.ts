@@ -1,7 +1,5 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
-
 
 //ROUTING
 import { AppRoutingModule } from "./app-routing.module";
@@ -14,6 +12,8 @@ import { Containers, DashboardContainer } from "./container/index";
 import { Components, Dashboard } from "./components/index";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
+import { GridModule } from "@progress/kendo-angular-grid";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,10 +22,11 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     Components,
     Dashboard
   ],
-  imports: [BrowserModule, 
-    AppRoutingModule, 
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule.forRoot()
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,18 +1,45 @@
-<nav style="background-color:#57626f !important; padding: 15px" class="navbar navbar-expand-lg navbar-dark bg-dark">
+<div class="progress">
+  <div
+    class="progress-bar"
+    role="progressbar"
+    aria-valuenow="0"
+    aria-valuemin="0"
+    aria-valuemax="100"
+  ></div>
+</div>
+<nav
+  style="background-color:#57626f !important; padding: 15px"
+  class="navbar navbar-expand-lg navbar-dark bg-dark"
+>
   <div class="row" style="height:50px;">
-    <div style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;" class="col-md-1">
+    <div
+      style="text-align: right; padding-right: 0; height: 100%; border-right: 1px solid #274170;"
+      class="col-md-1"
+    >
       <form style="margin:0;" class="navbar-brand">
         <div class="form-group">
-          <label class="attachFile" for="exampleFormControlFile1"><i class="fa fa-paperclip fa-lg attachIcon"></i>
+          <label class="attachFile" for="exampleFormControlFile1"
+            ><i class="fa fa-paperclip fa-lg attachIcon"></i>
           </label>
-          <input style="display:none" type="file" class="form-control-file" id="exampleFormControlFile1" />
+          <input
+            style="display:none"
+            type="file"
+            class="form-control-file"
+            id="exampleFormControlFile1"
+          />
         </div>
       </form>
     </div>
     <div class="col-md-2" style="border-right:1px solid #274170;padding: 0">
       <div class="dropdown">
-        <button class="btn btn-secondary dropDownButton" type="button" id="dropdownMenuButton" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
+        <button
+          class="btn btn-secondary dropDownButton"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
           <!-- <div></div> -->
           <div class="circle">
             <p style="margin:0;padding:9px;">HP</p>
@@ -32,7 +59,12 @@
         <div class="col-md-3" style="padding:0;padding-left:8px;">
           <div class="input-group input-header-container ">
             <i class="fa fa-search icon search-icon"></i>
-            <input class="form-control" type="text" placeholder="Search" name="usrnm" />
+            <input
+              class="form-control"
+              type="text"
+              placeholder="Search"
+              name="usrnm"
+            />
             <!-- <img src="./../../../assets/img/chat.png"/> -->
           </div>
         </div>
@@ -42,25 +74,41 @@
       </div>
     </div>
     <div class="col-md-1" style="padding:0;text-align: right;">
-      <button type="button" class="btn menu-button" data-toggle="button" (click)="isCollapsed = !isCollapsed"
-        [attr.aria-expanded]="!isCollapsed" aria-pressed="false" href="#navbarToggleExternalContent" data-target="navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent" autocomplete="off">
+      <button
+        type="button"
+        class="btn menu-button"
+        data-toggle="button"
+        (click)="isCollapsed = !isCollapsed"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-pressed="false"
+        href="#navbarToggleExternalContent"
+        data-target="navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent"
+        autocomplete="off"
+      >
         <Span>usrName</Span>
-        <i class="fa fa-bars menu-button-icon"></i></button>
+        <i class="fa fa-bars menu-button-icon"></i>
+      </button>
     </div>
   </div>
 </nav>
 
 <div class="body">
-
   <div class="header-app" *ngIf="isCollapsed">
     <ul class="list-sidebar">
       <li class="sidebar-brand"><a href="#"> Start Bootstrap </a></li>
       <li><a href="#">Dashboard</a></li>
 
-      <li><a href="#" style="color: cyan">----------------------------</a></li>
-      <li><a href="#" style="color: cyan">----------------------------</a></li>
-      <li> <a href="#" data-toggle="collapse" data-target="#products" class="collapsed active"> <i class="fa fa-bar-chart-o"></i>
+      <li><a href="#" style="color: cyan">------------------------</a></li>
+      <li><a href="#" style="color: cyan">------------------------</a></li>
+      <li>
+        <a
+          href="#"
+          data-toggle="collapse"
+          data-target="#products"
+          class="collapsed active"
+        >
+          <i class="fa fa-bar-chart-o"></i>
           <span class="fa fa-chevron-left pull-right submenu-icon"></span>
           <span class="nav-label">Graphs</span>
         </a>
@@ -92,8 +140,14 @@
       <div class="col-lg-6">
         <p style="margin-bottom:5px;">akjadjhs</p>
         <div class="dropdown show">
-          <a class="btn dropdown-button dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
+          <a
+            class="btn dropdown-button dropdown-toggle"
+            role="button"
+            id="dropdownMenuLink"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
             #eef6fb
           </a>
 
@@ -118,16 +172,15 @@
       </div>
     </div>
     <div style="margin-top:20px;" class="row">
-      <div class="col-md-6">
-        <p class="para">dskjhsjfh</p>
+      <div class="col-md-4">
+        <p class="para">111111</p>
       </div>
-      <div class="col-md-6 row">
-        <div class="col-md-6">
-          <p class="para">sdjhfdsj</p>
-        </div>
-        <div class="col-md-6">
-          <p style="text-align:right" class="para">hdkgyuas</p>
-        </div>
+      <div class="col-md-4">
+        <p class="para">222222</p>
+      </div>
+
+      <div class="col-md-4">
+        <p style="text-align:right" class="para">33333</p>
       </div>
     </div>
     <div style="margin-top:20px;" class="row">
